@@ -1,0 +1,12 @@
+agent: NoisyDQN
+env: highway-v0
+train:
+  episodes: 300
+  gamma: 0.99
+  lr: 0.0005
+  batch_size: 64
+  buffer_size: 100000
+  target_update: 1000
+  eps_start: 0.0
+  eps_end: 0.0
+  eps_decay: 1

@@ -1,0 +1,8 @@
+torch
+numpy
+gym==0.26
+highway-env
+matplotlib
+tqdm
+pyyaml
+tensorboard

@@ -1,0 +1,17 @@
+name: DQN_exp
+agent: DQN
+env: highway-v0
+
+train:
+  episodes: 300
+  gamma: 0.99
+  lr: 0.0005
+  batch_size: 64
+
+  eps_start: 1.0
+  eps_end: 0.05
+  eps_decay_type: exp
+  eps_decay_rate: 0.00005     # ~ behaves like your linear 50000 steps
+
+  buffer_size: 100000
+  target_update: 1000
